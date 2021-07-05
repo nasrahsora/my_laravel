@@ -25,6 +25,8 @@ Route::get('/beranda', function () {
     return view('beranda');
 })->name('beranda');
 
+Route::get('/registrasi', 'LoginController@registrasi')->name('registrasi');
+Route::post('/simpanregistrasi', 'LoginController@simpanregistrasi')->name('simpanregistrasi');
 Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
